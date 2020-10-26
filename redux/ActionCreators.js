@@ -55,16 +55,16 @@ export const fetchLocations = () => dispatch => {
 };
 
 export const locationsLoading = () => ({
-    type: ActionTypes.CAMPSITES_LOADING
+    type: ActionTypes.LOCATIONS_LOADING
 });
 
 export const locationsFailed = errMess => ({
-    type: ActionTypes.CAMPSITES_FAILED,
+    type: ActionTypes.LOCATIONS_FAILED,
     payload: errMess
 });
 
 export const addLocations = locations => ({
-    type: ActionTypes.ADD_CAMPSITES,
+    type: ActionTypes.ADD_LOCATIONS,
     payload: locations
 });
 

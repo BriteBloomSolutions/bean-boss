@@ -4,13 +4,13 @@ export const locations = (state = { isLoading: true,
                                      errMess: null,
                                      locations: []}, action) => {
     switch (action.type) {
-        case ActionTypes.ADD_CAMPSITES:
+        case ActionTypes.ADD_LOCATIONS:
             return {...state, isLoading: false, errMess: null, locations: action.payload};
 
-        case ActionTypes.CAMPSITES_LOADING:
+        case ActionTypes.LOCATIONS_LOADING:
             return {...state, isLoading: true, errMess: null, locations: []}
 
-        case ActionTypes.CAMPSITES_FAILED:
+        case ActionTypes.LOCATIONS_FAILED:
             return {...state, isLoading: false, errMess: action.payload};
 
         default:

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
 import Loading from './LoadingComponent';
 import * as Animatable from 'react-native-animatable';
-import { CAMPSITES } from '../shared/locations';
+import { LOCATIONS } from '../shared/locations';
 
 const mapStateToProps = state => {
     return {
@@ -18,7 +18,7 @@ class Directory extends Component {
         constructor(props) {
             super(props);
             this.state = { 
-                locations:CAMPSITES
+                locations:LOCATIONS
              }
         }
 
