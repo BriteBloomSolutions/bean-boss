@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "HipJoe",
+    "slug": "hipjoesite",
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.hipjoe.hipjoesite"
+    },
+    "android": {
+      "package": "com.hipjoe.hipjoesite"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "sdkVersion": "36.0.0"
+  }
+}
