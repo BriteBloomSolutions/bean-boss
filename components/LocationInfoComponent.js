@@ -105,7 +105,7 @@ function RenderLocation(props) {
                         style={styles.cardItem}
                         name={props.pencil ? 'pencil' : 'pencil' }
                         type='font-awesome'
-                        color='#5637DD'
+                        color='#a296d5'
                         raised
                         reverse
                         onPress={() => props.onShowModal()}
@@ -113,7 +113,7 @@ function RenderLocation(props) {
                     <Icon
                             name={'share'}
                             type='font-awesome'
-                            color='#5637DD'
+                            color='#a296d5'
                             style={styles.cardItem}
                             raised
                             reverse
@@ -261,7 +261,7 @@ class LocationInfo extends Component {
                                         this.handleComment(locationId);
                                         this.resetForm();
                                     }}
-                                    color='#5637DD'
+                                    color='#a296d5'
                                     title='Submit'
                                 />
                                 </View>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, ScrollView } from "react-native";
 import { Card, Button, Icon } from "react-native-elements";
-import { CAMPSITES } from "../shared/locations";
+import { LOCATIONS } from "../shared/locations";
 import { PARTNERS } from "../shared/partners";
 import { PROMOTIONS } from "../shared/promotions";
 import * as Animatable from "react-native-animatable";
@@ -15,7 +15,7 @@ class Contact extends Component {
 
   sendMail() {
     MailComposer.composeAsync({
-        recipients: ['locations@nucamp.co'],
+        recipients: ['admin@hipjoe.com'],
         subject: 'Inquiry',
         body: 'To whom it may concern:'
     })
@@ -26,14 +26,14 @@ class Contact extends Component {
       <ScrollView>
         <Animatable.View animation="fadeInDown" duration={2000} delay={1000}>
           <Card title="Contact Us" wrapperStyle={{ margin: 20 }}>
-            <Text>1 Nucamp Way</Text>
-            <Text>Seattle, WA 98001</Text>
-            <Text style={{ marginBottom: 10 }}>U.S.A.</Text>
-            <Text>Phone: 1-206-555-1234</Text>
-            <Text>Email: locations@nucamp.co</Text>
+            <Text>1 Peachtree Way</Text>
+            <Text>Atlanta, GA 30318</Text>
+            <Text style={{ marginBottom: 10 }}>USA</Text>
+            <Text>Phone: 1-404-770-0678</Text>
+            <Text>Email: admin@hipjoe.com</Text>
             <Button
                             title="Send Email"
-                            buttonStyle={{backgroundColor: '#5637DD', margin: 40}}
+                            buttonStyle={{backgroundColor: '#a296d5', margin: 40}}
                             icon={<Icon
                                 name='envelope-o'
                                 type='font-awesome'

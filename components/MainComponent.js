@@ -32,7 +32,7 @@ const FavoritesNavigator = createStackNavigator(
     {
         navigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#a296d5'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -66,7 +66,7 @@ const DirectoryNavigator = createStackNavigator(
         initialRouteName: 'Directory',
         navigationOptions: {
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#a296d5'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -84,7 +84,7 @@ const AboutNavigator= createStackNavigator(
     {
         navigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#a296d5'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -108,7 +108,7 @@ const HomeNavigator= createStackNavigator(
     {
         navigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#a296d5'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -132,7 +132,7 @@ const ContactNavigator = createStackNavigator(
     {
         navigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#a296d5'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -156,7 +156,7 @@ const ReservationNavigator = createStackNavigator(
     {
         ReservationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#a296d5'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -179,7 +179,7 @@ const LoginNavigator = createStackNavigator(
     {
         navigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#a296d5'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -315,7 +315,7 @@ const MainNavigator = createDrawerNavigator(
 },
     {   
         initialRouteName: 'Home',
-        drawerBackgroundColor: '#CEC8FF',
+        drawerBackgroundColor: '#b8e3ea',
         contentComponent: CustomDrawerContentComponent
     }
 );
@@ -387,7 +387,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     drawerHeader: {
-        backgroundColor: '#5637DD',
+        backgroundColor: '#a296d5',
         height: 140,
         alignItems: 'center',
         justifyContent: 'center',

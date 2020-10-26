@@ -96,7 +96,7 @@ class LoginTab extends Component {
                 iconStyle={{ marginRight: 10 }}
               />
             }
-            buttonStyle={{ backgroundColor: "#5637DD" }}
+            buttonStyle={{ backgroundColor: "#a296d5" }}
           />
         </View>
         <View style={styles.formButton}>
@@ -205,10 +205,10 @@ class RegisterTab extends Component {
           username: this.state.username,
           password: this.state.password,
         })
-      ).catch((error) => console.log("Could not save user info", error));
+      ).catch((error) => console.log("Unable to save user info", error));
     } else {
       SecureStore.deleteItemAsync("userinfo").catch((error) =>
-        console.log("Could not delete user info", error)
+        console.log("Unable to delete user info", error)
       );
     }
   }
@@ -285,7 +285,7 @@ class RegisterTab extends Component {
                   iconStyle={{ marginRight: 10 }}
                 />
               }
-              buttonStyle={{ backgroundColor: "#5637DD" }}
+              buttonStyle={{ backgroundColor: "#a296d5" }}
             />
           </View>
         </View>
@@ -301,8 +301,8 @@ const Login = createBottomTabNavigator(
   },
   {
     tabBarOptions: {
-      activeBackgroundColor: "#5637DD",
-      inactiveBackgroundColor: "#CEC8FF",
+      activeBackgroundColor: "#a296d5",
+      inactiveBackgroundColor: "#b8e3ea",
       activeTintColor: "#fff",
       inactiveTintColor: "#808080",
       labelStyle: { fontSize: 16 },

@@ -52,6 +52,7 @@ class Directory extends Component {
                 </View>
             );
         }*/
+        
         return (
             <FlatList
                 data={this.state.locations}
