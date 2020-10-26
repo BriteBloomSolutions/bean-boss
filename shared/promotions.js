@@ -1,9 +1,9 @@
 export const PROMOTIONS = [
     {
         id: 0,
-        name: "Mountain Adventure",
-        image: "/assets/images/breadcrumb-trail.jpg",
+        name: "The Roaring 20s Special",
+        image: "/assets/img/career-3.jpg",
         featured: true,
-        description: "Book a 5-day mountain trek with a seasoned outdoor guide! Fly fishing equipment and lessons provided."
+        description: "Is this new normal making your home feel cramped? Book a solo workspace! Free HipJoe Mask and hand sanitizer included."
     }
 ]

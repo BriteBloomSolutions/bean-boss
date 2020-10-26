@@ -7,7 +7,7 @@ import { baseUrl } from '../shared/baseUrl';
 import { connect } from 'react-redux';
 import { postFavorite } from '../redux/ActionCreators';
 import * as Animatable from 'react-native-animatable';
-import { CAMPSITES } from '../shared/locations';
+import { LOCATIONS } from '../shared/locations';
 import { COMMENTS } from '../shared/comments';
 
 
@@ -169,7 +169,7 @@ class LocationInfo extends Component {
             rating: 5,
             author: '',
             text: '',
-            locations: CAMPSITES,
+            locations: LOCATIONS,
             comments: COMMENTS
 
         }
