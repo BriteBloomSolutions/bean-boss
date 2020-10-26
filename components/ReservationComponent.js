@@ -13,20 +13,19 @@ class Reservation extends Component {
         super(props);
 
         this.state = {
-            campers: 1,
+            guests: 1,
             hikeIn: false,
             date: '',        };
     }
 
     static navigationOptions = {
-        title: 'Reserve Location'
+        title: 'Reserve a Room'
     }
 
 
     handleReservation() {
         console.log(JSON.stringify(this.state));
-        const message = `Number of Campers: ${this.state.campers}
-        \nHike-In? ${this.state.hikeIn}
+        const message = `Number of Guests: ${this.state.guests}
         '\nDate: ${this.state.date}`;
         Alert.alert(
         'Begin Search?',
@@ -55,8 +54,7 @@ class Reservation extends Component {
 
     resetForm() {
         this.setState({
-            campers: 1,
-            hikeIn: false,
+            guests: 1,
             date: '',
         });
     }
@@ -77,7 +75,7 @@ class Reservation extends Component {
         const permission = await this.obtainNotificationPermission();
         if (permission.status === 'granted') {
             Notifications.presentLocalNotificationAsync({
-                title: 'Your Location Reservation Search',
+                title: 'Your Reservation Search',
                 body: 'Search for ' + date + ' requested'
             });
         }
@@ -92,27 +90,17 @@ class Reservation extends Component {
             delay= '1'
             >
                 <View style={styles.formRow}>
-                    <Text style={styles.formLabel}>Number of Campers</Text>
+                    <Text style={styles.formLabel}>Number of guests</Text>
                     <Picker
                         style={styles.formItem}
-                        selectedValue={this.state.campers}
-                        onValueChange={itemValue => this.setState({campers: itemValue})}>
+                        selectedValue={this.state.guests}
+                        onValueChange={itemValue => this.setState({guests: itemValue})}>
                         <Picker.Item label='1' value='1' />
                         <Picker.Item label='2' value='2' />
                         <Picker.Item label='3' vlaue='3' />
                         <Picker.Item label='4' value='4' />
                         <Picker.Item label='5' value='5' />
-                        <Picker.Item label='6' value='6' />
                     </Picker>
-                </View>
-                <View style={styles.formRow}>
-                    <Text style={styles.formLabel}> Hike-In?</Text>
-                    <Switch
-                    style={styles.formItem}
-                        value={this.state.hikeIn}
-                        trackColor={{true: '#a296d5', false: null}}
-                        onValueChange={value => this.setState({hikeIn: value})}
-                    />
                 </View>
                 <View style={styles.formRow}>
                     <Text style={styles.formLabel}>Date</Text>
@@ -144,7 +132,7 @@ class Reservation extends Component {
                         onPress={() => this.handleReservation()}
                         title='Search'
                         color='#a296d5'
-                        accessabilityLabel='Tap me to search for available locations to reserve'
+                        accessabilityLabel='Tap here to search for available rooms to reserve'
                     />
                 </View>
                 <View style={styles.formRow}>
@@ -152,13 +140,13 @@ class Reservation extends Component {
                         onPress={() => this.resetForm()}
                         title='Cancel'
                         color='#a296d5'
-                        accessabilityLabel='Tap me to cancel'
+                        accessabilityLabel='Tap here to cancel'
                     />
                     <Button
                         onPress={() => this.onSubmit()}
                         title='Ok'
                         color='#a296d5'
-                        accessabilityLabel='Tap me to submit reservation'
+                        accessabilityLabel='Tap here to submit reservation'
                     />
                 </View>
 
